@@ -8,11 +8,12 @@
  http://www.springframework.org/schema/beans/spring-beans.xsd
  http://www.springframework.org/schema/context
  http://www.springframework.org/schema/context/spring-context.xsd">
- 
-	<bean class="com.springcore.constructorinjection.Certificate" name="certi1">
-		<constructor-arg value="Android using Kotlin"/>
+
+	<bean class="com.springcore.constructorinjection.Certificate"
+		name="certi1">
+		<constructor-arg value="Android using Kotlin" />
 	</bean>
-	
+
 	<bean class="com.springcore.constructorinjection.Person"
 		name="person1">
 		<constructor-arg value="Durgesh" />
@@ -25,9 +26,10 @@
 			</list>
 		</constructor-arg>
 	</bean>
-	
-	<bean class="com.springcore.constructorinjection.Certificate" name="certi2">
-		<constructor-arg value="Android using Java"/>
+
+	<bean class="com.springcore.constructorinjection.Certificate"
+		name="certi2">
+		<constructor-arg value="Android using Java" />
 	</bean>
 
 	<bean class="com.springcore.constructorinjection.Person"
@@ -42,5 +44,22 @@
 			</list>
 		</constructor-arg>
 	</bean>
+
+	<!-- to call with String constructor which will be called by default, no 
+		need to mention type="String" -->
+	<bean class="com.springcore.constructorinjection.Addition"
+		name="addition">
+		<constructor-arg value="15" />
+		<constructor-arg value="16" />
+	</bean>
+
+	<!-- to call with double constructor -->
+	<!-- <bean class="com.springcore.constructorinjection.Addition" name="addition"> 
+		<constructor-arg value="15" type="double" /> <constructor-arg value="16" 
+		type="double"/> </bean> -->
+	<!-- to call with int constructor -->
+	<!-- <bean class="com.springcore.constructorinjection.Addition" name="addition"> 
+		<constructor-arg value="15" type="int" /> <constructor-arg value="16" type="int"/> 
+		</bean> -->
 
 </beans>

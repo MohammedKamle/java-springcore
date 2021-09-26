@@ -13,6 +13,9 @@ public class Test {
 		
 		System.out.println(person1);
 		System.out.println(person2);
+		
+		Addition addition = (Addition) context.getBean("addition");
+		addition.doSum();
 	}
 
 }
