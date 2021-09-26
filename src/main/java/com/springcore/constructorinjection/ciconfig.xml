@@ -18,6 +18,12 @@
 		<constructor-arg value="Durgesh" />
 		<constructor-arg value="101" />
 		<constructor-arg ref="certi1" />
+		<constructor-arg>
+			<list>
+				<value>Basketball</value>
+				<value>Swimming</value>
+			</list>
+		</constructor-arg>
 	</bean>
 	
 	<bean class="com.springcore.constructorinjection.Certificate" name="certi2">
@@ -29,6 +35,12 @@
 		<constructor-arg value="Mohan" />
 		<constructor-arg value="102" />
 		<constructor-arg ref="certi2" />
+		<constructor-arg>
+			<list>
+				<value>Cricket</value>
+				<value>Gymming</value>
+			</list>
+		</constructor-arg>
 	</bean>
 
 </beans>
