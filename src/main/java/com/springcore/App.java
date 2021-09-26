@@ -9,7 +9,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class App {
 	public static void main(String[] args) {
-		System.out.println("Hello World!");
+		System.out.println("Hello World!, I am in constructor-injection branch");
 		ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
 		// Dependency injection
 		/*
