@@ -8,15 +8,13 @@
  http://www.springframework.org/schema/beans/spring-beans.xsd
  http://www.springframework.org/schema/context
  http://www.springframework.org/schema/context/spring-context.xsd">
+ 
+ <!-- Below tag is used for our annotations to work -->
+ <context:annotation-config/>
 
-<!-- 
-	<bean class="com.springcore.lifecycle.Samosa" name="s1"
-		init-method="init" destroy-method="destroy">
-		<property name="price" value="10" />
-	</bean> -->
 	
-	<bean class="com.springcore.lifecycle.Pepsi" name="p1">
-		<property name="price" value="20" />
+	<bean class="com.springcore.lifecycle.Vada" name="v1">
+		<property name="price" value="12" />
 	</bean>
 	
 </beans>

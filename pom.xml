@@ -34,6 +34,16 @@
 			<artifactId>spring-context</artifactId>
 			<version>5.2.3.RELEASE</version>
 		</dependency>
+		
+		<!--Below dependency is for @PostConstruct and @PreDestroy annotations if we are using java 9+ 
+		https://www.baeldung.com/spring-postconstruct-predestroy#:~:text=4.-,Java%209%2B,-Note%20that%20both
+		 -->
+		
+		<dependency>
+			<groupId>javax.annotation</groupId>
+			<artifactId>javax.annotation-api</artifactId>
+			<version>1.3.2</version>
+		</dependency>
 
 	</dependencies>
 </project>
