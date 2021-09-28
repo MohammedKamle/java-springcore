@@ -20,6 +20,12 @@ public class Vada {
 		this.price = price;
 	}
 	
+	/*
+	 * Annotation based configuration
+	 * Please note that @PreDestry and @PostConstruct are not available by default after java8,
+	 * you need to explicitly add a maven dependency for them if you are using java 8+
+	 * */
+	
 	@PostConstruct
 	public void init() {
 		System.out.println("Inside init() method through annotation");
