@@ -15,16 +15,16 @@ public class Samosa {
 	}
 
 	public void setPrice(double price) {
-		System.out.println("Setting the property");
+		System.out.println("Setting the samosa price property");
 		this.price = price;
 	}
 	
 	// life cycle methods(init() and destroy()), reference given in bean tag in xml
 	public void init() {
-		System.out.println("Inside init() method");
+		System.out.println("Inside init() method through xml");
 	}
 	public void destroy() {
-		System.out.println("Inside destroy() method");
+		System.out.println("Inside destroy() method through xml");
 	}
 
 	@Override
