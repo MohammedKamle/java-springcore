@@ -54,12 +54,17 @@
 	</bean>
 
 	<!-- to call with double constructor -->
-	<!-- <bean class="com.springcore.constructorinjection.Addition" name="addition"> 
-		<constructor-arg value="15" type="double" /> <constructor-arg value="16" 
-		type="double"/> </bean> -->
+	<!-- <bean class="com.springcore.constructorinjection.Addition"
+		name="addition">
+		<constructor-arg value="15" type="double" />
+		<constructor-arg value="16" type="double" />
+	</bean> -->
+	
 	<!-- to call with int constructor -->
-	<!-- <bean class="com.springcore.constructorinjection.Addition" name="addition"> 
-		<constructor-arg value="15" type="int" /> <constructor-arg value="16" type="int"/> 
-		</bean> -->
+	<!-- <bean class="com.springcore.constructorinjection.Addition"
+		name="addition">
+		<constructor-arg value="15" type="int" />
+		<constructor-arg value="16" type="int" />
+	</bean> -->
 
 </beans>
