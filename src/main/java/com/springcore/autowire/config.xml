@@ -10,9 +10,14 @@
  http://www.springframework.org/schema/context/spring-context.xsd">
 
 	<bean class="com.springcore.autowire.Address" name="address">
-		<property name="street" value="Anna Saheb Vartak Road"/>
-		<property name="city" value="Kalyan"/>
+		<property name="street" value="Anna Saheb Vartak Road" />
+		<property name="city" value="Kalyan" />
 	</bean>
 	
-	<bean class="com.springcore.autowire.Employee" name="emp1" autowire="byName"/>
+	<!-- Here, we have used autowire through "byName", in order for it to work 
+		properly we need to make sure that the Address variable name in Employee class should match
+		with the its corresponding bean name for spring container to inject it accordingly-->
+		
+	<bean class="com.springcore.autowire.Employee" name="emp1"
+		autowire="byName" />
 </beans>
