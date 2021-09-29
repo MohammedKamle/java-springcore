@@ -9,6 +9,8 @@ public class Test {
 		ApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/autowire/config.xml");
 		Employee emp1 = context.getBean("emp1", Employee.class);
 		System.out.println(emp1);
+		
+		System.out.println("Inside branch 8");
 
 	}
 
