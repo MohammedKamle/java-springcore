@@ -15,12 +15,13 @@
 	</bean>
 
 
-	<!-- Here, we have used autowire through "byType", spring container will first find the dependednt 
-	class "Address" in Employee and then try to map it with corresponsding bean in the xml 
+	<!-- Here, we have used autowire with  "constructor", spring container will first find the dependednt 
+	class's "Address" variable name(which is address) in Employee and then try to map it with corresponsding bean in the xml. 
+	Here it will set the value of address variable with the help of constructor
 	 -->
 
 	<bean class="com.springcore.autowire.Employee" name="emp1"
-		autowire="byType" />
+		autowire="constructor" />
 
 
 </beans>
