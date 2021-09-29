@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- refer 1:12:00 in the video, the below is an edited annotation -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd
+ http://www.springframework.org/schema/util
+ http://www.springframework.org/schema/util/spring-util.xsd
+ ">
+ 
+ 	<!-- Standalone Collections =>Write collection once and use everywhere,
+ 	this requires below xmlns and sxi:schemaLocation:
+ 	xmlns:util="http://www.springframework.org/schema/util"
+ 	http://www.springframework.org/schema/util
+    http://www.springframework.org/schema/util/spring-util.xsd
+ 	 -->
+ 
+	<!-- standalone lis -->
+	<util:list list-class="java.util.LinkedList" id="mybestfriends">
+		<value>Aman</value>
+		<value>Rohit</value>
+		<value>Ganesh</value>
+		<value>Raman</value>
+	</util:list>
+	
+	<!-- standalone map -->
+	<util:map map-class="java.util.HashMap" id="fees">
+		<entry key="Spring Framework" value="8000"/>
+		<entry key="Django Framework" value="5000"/>
+		<entry key="Hibernate Framework" value="2000"/>
+	</util:map>
+	
+	<!-- standalone properties -->
+	<util:properties id="dbConfig">
+		<prop key="driver">com.sql.jdbc.driver</prop>
+		<prop key="username">mkamle86</prop>
+		<prop key="password">kjdhkjhjsdk</prop>
+	</util:properties>
+	
+	
+	<bean class="com.springcore.standalone.collections.Person" name="person1">
+		<property name="friends" ref="mybestfriends"/>
+		<property name="feeStructure" ref="fees"/>
+		<property name="properties" ref="dbConfig"/>
+	</bean>
+	
+	<bean class="com.springcore.standalone.collections.Person" name="person2">
+		<property name="friends" ref="mybestfriends"/>
+		<property name="feeStructure" ref="fees"/>
+		<property name="properties" ref="dbConfig"/>
+	</bean>
+</beans>
