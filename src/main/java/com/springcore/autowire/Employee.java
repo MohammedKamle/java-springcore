@@ -6,6 +6,7 @@ public class Employee {
 
 	public Employee(Address address) {
 		super();
+		System.out.println("Inside Employee constructor");
 		this.address = address;
 	}
 
@@ -19,6 +20,7 @@ public class Employee {
 	}
 
 	public void setAddress(Address address) {
+		System.out.println("inside Employee setter method");
 		this.address = address;
 	}
 
